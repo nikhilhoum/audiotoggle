@@ -35,10 +35,14 @@ public class AudioTogglePlugin extends CordovaPlugin {
 	    if (mode.equals("earpiece")) {
 	    	audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
 	    	audioManager.setSpeakerphoneOn(false);
+            	audioManager.setBluetoothScoOn(true);
+            	audioManager.startBluetoothSco();
 	        return true;
 	    } else if (mode.equals("speaker")) {        
 	    	audioManager.setMode(AudioManager.STREAM_MUSIC);
 	    	audioManager.setSpeakerphoneOn(true);
+            	audioManager.stopBluetoothSco();
+            	audioManager.setBluetoothScoOn(false);
 	        return true;
 	    } else if (mode.equals("ringtone")) {        
 	    	audioManager.setMode(AudioManager.MODE_RINGTONE);
@@ -47,6 +51,8 @@ public class AudioTogglePlugin extends CordovaPlugin {
 	    } else if (mode.equals("normal")) {        
 	    	audioManager.setMode(AudioManager.MODE_NORMAL);
 	    	audioManager.setSpeakerphoneOn(false);
+            	audioManager.setBluetoothScoOn(true);
+            	audioManager.startBluetoothSco();
 	        return true;
 	    }
 	    
