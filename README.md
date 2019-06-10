@@ -1,7 +1,6 @@
 ## AudioToggle
 
-This is a copy of https://github.com/alongubkin/audiotoggle with slight modifications to improve packaging with cordova.
-Cordova plugin for switching between speaker and earpiece when playing audio.
+This is a copy of https://github.com/alongubkin/audiotoggle forked from danielflippance/audiotoggle with some additions to enable a connected bluetooth headset's microphone in NORMAL and EARPICE modes on android
 
     cordova plugin add cordova-plugin-audiotoggle --save
     
