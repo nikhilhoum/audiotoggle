@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-audiotoggle",
+  "name": "cordova-plugin-audiotoggle-bluetooth",
   "version": "1.0.3",
   "description": "Cordova plugin for switching between speaker and earpiece when playing audio",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielflippance/audiotoggle.git"
+    "url": "git+https://github.com/trixyz/audiotoggle.git"
   },
 "keywords": [
     "ecosystem:cordova",
@@ -21,7 +21,7 @@
   "author": "alongubkin",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/danielflippance/audiotoggle/issues"
+    "url": "https://github.com/trixyz/audiotoggle/issues"
   },
-  "homepage": "https://github.com/danielflippance/audiotoggle#readme"
+  "homepage": "https://github.com/trixyz/audiotoggle#readme"
 }
