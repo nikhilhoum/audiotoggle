@@ -32,7 +32,7 @@ public class AudioTogglePlugin extends CordovaPlugin {
 	    AudioManager audioManager = 
 	    	(AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 	    
-		Log.d("nikhil", "setAudioMode method called")
+		Log.d("nikhil", "setAudioMode method called");
 	    if (mode.equals("earpiece")) {
 	    	audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
 	    	audioManager.setSpeakerphoneOn(false);
